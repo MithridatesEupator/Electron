@@ -1,0 +1,77 @@
+body {
+    background-color: #312b36;
+}
+
+::selection {
+    background: #fff;
+}
+::-moz-selection {
+    background: #fff;
+}
+
+p {
+    font-family: "Roboto";
+
+}
+
+.topBar {
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    margin:0 auto;
+}
+
+.btn {
+    border-radius: 4px;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    background-color: transparent;
+    margin: 10px 10px;
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #fff;
+    position:relative;
+    overflow: hidden;
+}
+
+.btn:before {
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:white;
+    z-index:-1;
+    overflow: hidden;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.btn:hover:before {
+    left:0;
+    right:0;
+    opacity:1;
+    color: #312b36;
+    background-radius: 2px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.btn:hover {
+    color: #312b36;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+button:focus {
+    outline:0;
+}
