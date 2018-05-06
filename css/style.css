@@ -1,5 +1,10 @@
 body {
     background-color: #312b36;
+    margin: auto 0;
+    border: 2px solid #fff;
+    border-radius: 60px;
+    overflow: hidden;
+
 }
 
 ::selection {
@@ -11,7 +16,17 @@ body {
 
 p {
     font-family: "Roboto";
+    color: white;
 
+}
+.colorBar {
+    background-color: #cdcdcd;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    margin:0 auto;
 }
 
 .topBar {
@@ -19,6 +34,7 @@ p {
     align-content: center;
     text-align: center;
     margin:0 auto;
+
 }
 
 .btn {
@@ -32,6 +48,7 @@ p {
     color: #fff;
     position:relative;
     overflow: hidden;
+    -webkit-app-region: no-drag;
 }
 
 .btn:before {
